@@ -1,6 +1,6 @@
 <?php
 class UrlHelper {
-    const BASE_URL = 'https://redfish-precise-mentally.ngrok-free.app/PHP/';
+    const BASE_URL = 'https://gardening-toolkit-crude-bingo.trycloudflare.com/PHP/';
 
     public function getBaseUrl() {
         return self::BASE_URL;

@@ -5,7 +5,7 @@ header('Content-Type: application/json');
 include '../conexion.php';
 
 // Consulta SQL para obtener los usuarios ordenados por ecoPoints de mayor a menor
-$sql = "SELECT username, perfil, ecoPoints FROM usuarios WHERE rol = 'usuario' ORDER BY ecoPoints DESC";
+$sql = "SELECT username, perfil, ecoPoints FROM usuarios WHERE rol = 'usuario' AND ecoPoints >=1 ORDER BY ecoPoints DESC";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
